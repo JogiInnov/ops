@@ -1,6 +1,6 @@
 # ops
 
-**1.) mongo **
+**1.) mongo
 
 
 Use this script to update {'status','login.failed_attempts', and 'last_password_change_timestamp'} against a given emailid:
@@ -20,7 +20,7 @@ jq parser must be installed on the linux box from where you're running the scrip
 apt-get install jq
 
 
-***a.)*** Script ebs_available.sh . {used to list out ebs-volumes ids which are in available state and are not being used by any resource.}
+***a.)*** Script ebs_available.sh . 
 
 Example: 
 
