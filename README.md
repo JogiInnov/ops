@@ -16,13 +16,17 @@ Also, this script require an input text file with mongodb ip and creds. with bel
 **2.) aws-cli**
 
 ***Prequesites: 
-jq parser must be installed on the linux box from where you're running the script. 
-apt-get install jq***
+a) jq parser must be installed on the linux box from where you're running the script.
+b) aws cli programmatic access should be enabled on the box.***
 
-
-***a.)*** Script ebs_available.sh . 
+***Script ebs_available.sh***
 
 Example: 
 
 /bin/bash ebs_available.sh
+
+
+
+
+
 
