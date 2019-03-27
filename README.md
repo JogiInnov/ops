@@ -13,10 +13,14 @@ Also, this script require an input text file with mongodb ip and creds. with bel
 127.0.0.1:username:password
 
 
-**2.) aws-cli **
+**2.) aws-cli
+
+***Prequesites: 
+jq parser must be installed on the linux box from where you're running the script. 
+apt-get install jq
 
 
-a.) Script ebs_available.sh . {used to list out ebs-volumes ids which are in available state and are not being used by any resource.}
+***a.)*** Script ebs_available.sh . {used to list out ebs-volumes ids which are in available state and are not being used by any resource.}
 
 Example: 
 
