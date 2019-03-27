@@ -55,9 +55,9 @@ for i in ${idsArray[@]}
 				Logger "[ Info ] :: Snapshot created ..!! with below details: ${outputvar}" 3
 				echo "------------------------------------------"
 				Logger "[ Info ] :: Deleting Volume with id == $i ..!!" 6
-				outputvar=$(echo `aws ec2 delete-volume --volume-id $i --dry-run 2>&1`)
+				outputvar=$(echo `aws ec2 delete-volume --volume-id $i 2>&1`)
                                 sleep 1
-				Logger "[ Alert ] :: Volume deleted ..!! with below details: ${outputvar}" 6
+				Logger "[ Alert ] :: Volume deleted ..!!  ${outputvar}" 6
 				
 			else
 				sleep 1
