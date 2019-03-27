@@ -1,5 +1,0 @@
-20190327:19:57:48 :: [ Info ] :: Volume id found ==> vol-0ff8ab50c91a0e4b6 ..!!
-20190327:19:57:50 :: [ Info ] :: Snapshot created ..!! with below details: { "Description": "ebs snapshot form aws-cli", "Encrypted": false, "OwnerId": "052829437425", "Progress": "", "SnapshotId": "snap-0ebc6c40302319586", "StartTime": "2019-03-27T14:27:49.000Z", "State": "pending", "VolumeId": "vol-0ff8ab50c91a0e4b6", "VolumeSize": 8, "Tags": [ { "Key": "purpose", "Value": "prod" }, { "Key": "costcenter", "Value": "123" } ] }
-20190327:19:57:50 :: [ Info ] :: Deleting Volume with id == vol-0ff8ab50c91a0e4b6 ..!!
-20190327:19:57:52 :: [ Alert ] :: Volume deleted ..!! with below details:
- ------------------------------
