@@ -15,12 +15,12 @@ Also, this script require an input text file with mongodb ip and creds. with bel
 
 **2.) aws-cli**
 
-***Prequesites:\
+Prequesites:\
 a) jq parser must be installed on the linux box from where you're running the script.\
-b) aws cli programmatic access should be enabled on the box.***
+b) aws cli programmatic access should be enabled on the box.
 
 ***Script ebs_available.sh***
-
+============ Used to delete the Available Ebs volumes after taking snapshots.======== 
 Example: 
 
 /bin/bash ebs_available.sh
