@@ -11,45 +11,6 @@
             "VolumeId": "vol-0ff8ab50c91a0e4b6",
             "Iops": 100,
             "VolumeType": "gp2"
-        },
-        {
-            "Attachments": [],
-            "AvailabilityZone": "ap-south-1a",
-            "CreateTime": "2018-11-09T06:04:31.706Z",
-            "Encrypted": false,
-            "Size": 8,
-            "SnapshotId": "snap-03baf9b7969006e6b",
-            "State": "available",
-            "VolumeId": "vol-0ff8ab50c91a0e4bc",
-            "Iops": 100,
-            "VolumeType": "gp2"
-        },
-        {
-            "Attachments": [],
-            "AvailabilityZone": "ap-south-1a",
-            "CreateTime": "2018-11-09T06:04:31.706Z",
-            "Encrypted": false,
-            "Size": 8,
-            "SnapshotId": "snap-03baf9b7969006e6b",
-            "State": "available",
-            "VolumeId": "vol-0ff8ab50c91a0e4cc",
-            "Iops": 100,
-            "VolumeType": "gp2"
-        },
-        {
-            "Attachments": [],
-            "AvailabilityZone": "ap-south-1a",
-            "CreateTime": "2018-11-09T06:04:31.706Z",
-            "Encrypted": false,
-            "Size": 8,
-            "SnapshotId": "snap-03baf9b7969006e6b",
-            "State": "available",
-            "VolumeId": "vol-0ff8ab50c91a0e4dc",
-            "Iops": 100,
-            "VolumeType": "gp2"
         }
-
-
-
     ]
 }
