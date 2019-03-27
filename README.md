@@ -19,7 +19,7 @@ Prequesites:\
 a) jq parser must be installed on the linux box from where you're running the script.\
 b) aws cli programmatic access should be enabled on the box.
 
-***Script ebs_available.sh***
+***Script ebs_available.sh***\
 ============ Used to delete the Available Ebs volumes after taking snapshots.======== 
 Example: 
 
