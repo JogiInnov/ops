@@ -1,6 +1,6 @@
 # ops
 
-**1.) mongo **
+**1.) mongo**
 
 
 Use this script to update {'status','login.failed_attempts', and 'last_password_change_timestamp'} against a given emailid:
@@ -13,12 +13,20 @@ Also, this script require an input text file with mongodb ip and creds. with bel
 127.0.0.1:username:password
 
 
-**2.) aws-cli **
+**2.) aws-cli**
 
+***Prequesites: 
+a) jq parser must be installed on the linux box from where you're running the script.
+       b) aws cli programmatic access should be enabled on the box.***
 
-a.) Script ebs_available.sh . {used to list out ebs-volumes ids which are in available state and are not being used by any resource.}
+***Script ebs_available.sh***
 
 Example: 
 
 /bin/bash ebs_available.sh
+
+
+
+
+
 
