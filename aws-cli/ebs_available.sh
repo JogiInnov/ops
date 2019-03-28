@@ -29,23 +29,14 @@ Logger()
 ##Initialization##
 ##################
 
-echo "`aws ec2 describe-volumes  --filters Name=status,Values=available`" > json.txt
-count=`cat json.txt  | jq '.[] | length'`
-i="0"
+count=`aws ec2 describe-volumes --filters "Name=status, Values=available"  --query 'Volumes[].VolumeId' --output text | wc -l`
 
-while [ $i -lt $count ]
-do 
-	#echo $i
-	idsArray+=( "$( echo "`cat json.txt | jq '.[]['$i'].VolumeId'`" )" )
-	i=`expr $i + 1`
-done
 
 echo "========= printing available volume id's as below ===="
 
-for i in ${idsArray[@]}
+for i in `aws ec2 describe-volumes --filters "Name=status, Values=available"  --query 'Volumes[].VolumeId' --output text`
 	do 
-		#echo $i
-		i=$(echo $i | sed s/\"//g)
+		echo $i
         	Logger "[ Info ] :: Volume id found ==> $i ..!!" 4
 		echo "************ Creating snapshot for volume $i below: ****************"
 		outputvar=$(echo `aws ec2 create-snapshot --volume-id $i --description 'ebs snapshot form aws-cli' --tag-specifications 'ResourceType=snapshot,Tags=[{Key=purpose,Value=prod},{Key=costcenter,Value=123}]' 2>&1`)
